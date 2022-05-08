@@ -14,6 +14,7 @@ header {
 header h1{
     font-size: 40px;
     padding-left: 1em;
+    font-weight: 520;
 }
 
 nav {
@@ -25,9 +26,11 @@ nav div {
 }
 
 nav a {
+    font-size: 20px;
     color: aliceblue;
     padding: 1em;
     border-style: solid;
+    margin: 10px;
 }
 
 nav a:hover {
@@ -63,6 +66,7 @@ a:link {
 
 .section-grid h2 {
     font-size: 30px;
+    font-weight: 525;
     color: #FFA630;
 }
 
@@ -75,12 +79,17 @@ a:link {
     align-items: center;
 }
 
-.container div {
-    padding: 1em;
+.container div, a {
+    padding: 0.5em;
 }
 
 .content-section{
     margin-left: 30px;
+}
+
+.content-section h3{
+    padding: 1em;
+    font-size: 20px;
 }
 
 .work-section {
@@ -97,7 +106,7 @@ a:link {
     grid-template-rows: 1fr 1fr;
 }
 
-#work-container div{
+#work-container div, a {
     padding-top: 20px 30px;
     margin: 20px 50px;
     display: flex;
@@ -117,4 +126,15 @@ a:link {
     font-weight: 600;
     font-size: 25px;
     color: #FDFFFC;
+}
+
+#portfolio-name{
+    display: flex;
+    align-items: center;
+}
+
+h3 a{
+    display: block;
+    margin: auto;
+    padding: auto;
 }
