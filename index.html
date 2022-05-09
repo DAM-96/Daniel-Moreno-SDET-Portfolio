@@ -10,36 +10,99 @@
 </head>
 <body>
     <header>
-        <div id="portfolio-name">Daniel Moreno</div>
+        <div id="portfolio-name">
+            <h1>Daniel Moreno</h1>
+        </div>
         <nav>
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact-me">Contact Me</a></li>
-                <li><a href="#resume">Resume</a></li>
-            </ul>
+            <div>
+                <a href="#about-me">About Me</a>
+            </div>
+            <div>
+                <a href="#work">Work</a>
+            </div>
+            <div>
+                <a href="#contact-me">Contact Me</a>
+            </div>
+            <div>
+                <a href="#resume">Resume</a>
+            </div>
         </nav>
     </header>
-    <main>
-        <div>
-            <h2 id="about-me">About Me</h2>
-        </div>
-        <div >
-            <h2 id="work">Work</h2>
-        </div>
-        <div>
-            <h2 id="contact-me">Contact Me</h2>
-            <div>
-                <h3>Cellphone</h3>
-                <h3>Email</h3>
-                <h3>Github</h3>
-                <h3>LinkedIn</h3>
-                <h3>Spotify</h3>
+    <div class="container">
+        <div id="about-me" class="section-grid">
+            <div class="section-title-holder">
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="content-section">
+                <p>
+                    I'm a Software Development Engineer in Test with a passion for AI and all things automation.
+                    I've been a QA Engineer for the last 4 years and I'm currently working on honing my web development skills to complement my existing abilities.
+                    As a hobby, I like to code simple applications, mostly on Python, and I play piano.
+                    In the following sections you'll be able to see some of my recent work, my contact info and my resume.
+                </p>
             </div>
         </div>
-        <div>
-            <h2 id="resume">Resume</h2>
+        <div id="work" class="section-grid">
+            <div class="section-title-holder">
+                <h2>Work</h2>
+            </div>
+            <div id="work-container" class="content-section">
+                    <a class="work-section" href="https://github.com/DAM-96/SeleniumGigs_Py" target="_blank">
+                        <div>
+                            <img src="./assets/images/github.png" alt="GitHub Logo Image link for 1st Work">
+                        </div>
+                        <h4>
+                            Selenium Gigs
+                        </h4>
+                    </a>
+                    <a class="work-section" href="https://github.com/DAM-96/Python-CodeSamples" target="_blank">
+                        <div>
+                            <img src="./assets/images/github.png" alt="GitHub Logo Image link for 2nd Work">
+                        </div>
+                        <h4>
+                            Python Code Samples
+                        </h4>
+                    </a>
+                    <a class="work-section" href="https://github.com/DAM-96/NOC_pyFW" target="_blank">
+                        <div>
+                            <img src="./assets/images/github.png" alt="GitHub Logo Image link for 3rd Work">
+                        </div>
+                        <h4>
+                            NOC QA Automation Framework
+                        </h4>
+                    </a>
+                    <a class="work-section" href="https://github.com/DAM-96/horiseon-solution-services-site" target="_blank">
+                        <div>
+                            <img src="./assets/images/github.png" alt="GitHub Logo Image link for 4th Work">
+                        </div>
+                        <h4>
+                            Dummy Company sample site
+                        </h4>
+                    </a>
+            </div>
         </div>
-    </main>
+        <div id="contact-me" class="section-grid">
+            <div class="section-title-holder">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="content-section">
+                <h3>Cellphone: 8186555552</h3>
+                <h3><a href="mailto: d.a.morenog@outlook.com" target="_blank">Email</a></h3>
+                <h3><a href="https://github.com/DAM-96" target="_blank">Github</a></h3>
+                <h3><a href="https://www.linkedin.com/in/daniel-alejandro-moreno-garza-3a19b4127/" target="_blank">LinkedIn</a></h3>
+                <h3><a href="https://open.spotify.com/user/22t5tyvveij4pdachrgmircci" target="_blank">Spotify</a></h3>
+            </div>
+        </div>
+        <!-- <div id="resume" class="section-grid">
+            <div class="section-title-holder">
+                <h2>Resume</h2>
+            </div>
+            <div class="content-section">
+                This is my resume
+            </div>
+        </div> -->
+    </div>
+    <footer>
+    </footer>
 </body>
 </html>
