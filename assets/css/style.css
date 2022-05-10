@@ -1,140 +1,135 @@
-body {
-    background-color:#FDFFFC;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+:root {
+    --main-color: #010926;
+    --neutral-color: #EFF2F1;
+    --accent-color: #DD6031;
+    --secondary-color: #276FBF;
+    --terciary-color: #8E8DBE;
 }
 
-header {
-    background-color: #011627;
-    color: #FDFFFC;
-    padding: 3em;
-    display: flex;
-    justify-content: space-between;
+body{
+    background-color: var(--neutral-color);
+    color: var(--main-color);
+    font-family: 'Roboto Mono';
 }
 
-header h1{
-    font-size: 40px;
-    padding-left: 1em;
-    font-weight: 520;
+a{
+    color: var(--accent-color);
+    padding: 0.2em;
 }
 
-nav {
-    display: flex;
+a:link{
+    text-decoration: none;
 }
 
-nav div {
-    display: flex;
+a:hover{
+    color: var(--secondary-color);
 }
 
-nav a {
+a:active{
+    color: var(--neutral-color);
+    border-radius: 30px;
+    background-color: var(--accent-color);
+}
+
+h3 span{
+    font-weight: 500;
+}
+
+header{
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    border-bottom:2px;
+    border-color: var(--main-color);
+    border-style: solid;
+    background-color: var(--main-color);
+    color: var(--neutral-color);
+}
+
+.main-color{
+    background-color: var(--main-color);
+    color: var(--neutral-color);
+}
+
+.neutral-color{
+    background-color: var(--neutral-color);
+    color: var(--main-color);
+}
+
+.neutral-color > * {
+    background-color: var(--neutral-color);
+    color: var(--main-color);
+}
+
+.menu .nav-link{
     font-size: 20px;
-    color: aliceblue;
+    color: var(--neutral-color);
     padding: 1em;
     border-style: solid;
     margin: 10px;
 }
 
-nav a:hover {
+.menu .nav-link:hover{
     border-style: solid;
     padding: 0.85em;
     border-width: 0.15em;
-    border-color: aliceblue;
+    border-radius: 1em;
+    border-color: var(--neutral-color);
 }
 
-nav a:active {
-    border-color: #41EAD4;
+.menu .nav-link:active{
+    background-color: var(--secondary-color);
+    border-color: var(--terciary-color);
 }
 
-a:link {
-    text-decoration: none;
+.section-wrapper{
+    margin: 10px 20px;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.section-grid {
-    display: grid;
-    grid-template-columns: 1fr 8fr;
-}
-
-.section-grid p {
-    color: #611C35;
-    font-size: 20px;
-    padding-right: 10em;
-}
-
-.section-grid h2 {
-    font-size: 30px;
-    font-weight: 525;
-    color: #FFA630;
-}
-
-.section-title-holder {
+.section-title-holder{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom:2px;
+    border-color: var(--main-color);
     border-style: solid;
-    border-right-width: 3px;
-    border-color: #FFA630;
+}
+
+#main-content{
+    padding: 30px 10px;
+}
+
+#contact-info{
     display: flex;
-    justify-content: right;
-    align-items: center;
-}
-
-.container div, a {
-    padding: 0.5em;
-}
-
-.content-section{
-    margin-left: 30px;
-}
-
-.content-section h3{
-    padding: 1em;
-    font-size: 20px;
-}
-
-.work-section {
-    border-style:double;
-    border-width: 5px;
-    border-color: #611C35;
-    border-radius: 100px;
-    background-color: #611C35;
-}
-
-#work-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-#work-container div, a {
-    padding-top: 20px 30px;
-    margin: 20px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
-#work-container img{
-    width: 100%;
-    height: 100%;
-    -webkit-filter: blur(5px);
-    filter: blur(5px) url('#x-rays') opacity(30%);
+#contact-info h3{
+    margin-left: 5%;
 }
 
-#work-container h4{
-    font-weight: 600;
-    font-size: 25px;
-    color: #FDFFFC;
+#about-me-text{
+    font-size: large;
 }
 
-#portfolio-name{
+#work-container{
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
-h3 a{
-    display: block;
-    margin: auto;
-    padding: auto;
+.work-section{
+    flex: 1 0 40%;
+    color: var(--main-color);
+    padding: 2em;
+    margin: 1em;
+}
+
+.work-section:hover{
+    color: var(--accent-color);
+    animation: pulse 2s infinite;
+}
+
+.work-section:active{
+    animation: heartBeat 1s;
+    color: var(--neutral-color);
 }
